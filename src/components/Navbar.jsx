@@ -18,6 +18,13 @@ const Navbar = () => {
             fill="currentColor"></path>
         </svg>
       </div>
+      <div className="links">
+        {['Services', 'Our Work', 'About Us', 'Insights'].map((item, index) => (
+          <a href="#" key={index} className="text-md font-semibold">
+            {item}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
