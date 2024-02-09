@@ -7,9 +7,11 @@ const LandingPage = () => {
       <div className="textstructure mt-40 px-20">
         {['we create', 'eye-opening', 'presentations'].map((item, index) => (
           <div key={index} className="masker">
-            <div className="w-fit flex">
-              {index === 1 && <div className="w-[9vw] bg-red-500 h-[5.3vw] relative -top-3"></div>}
-              <h1 className="uppercase text-[7rem] font-['Founders_Grotesk_X_Condensed'] font-medium leading-[5.5rem]">
+            <div className="w-fit flex overflow-hidden">
+              {index === 1 && (
+                <div className=" mr-[1vw] w-[9vw] rounded-md bg-green-500 h-[5.7vw] relative top-[0.8vw]"></div>
+              )}
+              <h1 className="pt-[2vw] -mb-[1vw] uppercase text-[9vw] font-['Founders_Grotesk_X_Condensed'] font-medium leading-[.70]">
                 {item}
               </h1>
             </div>
