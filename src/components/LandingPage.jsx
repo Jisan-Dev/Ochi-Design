@@ -1,11 +1,34 @@
 import React from 'react';
+import { GoArrowUpRight } from 'react-icons/go';
 
 const LandingPage = () => {
   return (
     <div className="w-full h-screen bg-zinc-900 pt-1">
       <div className="textstructure mt-40 px-20">
-        <div className="masker">
-          <h1 className="uppercase text-9xl font-['Bebas_Neue'] leading-none">We create</h1>
+        {['we create', 'eye-opening', 'presentations'].map((item, index) => (
+          <div key={index} className="masker">
+            <div className="w-fit flex">
+              {index === 1 && <div className="w-[9vw] bg-red-500 h-[5.3vw] relative -top-3"></div>}
+              <h1 className="uppercase text-[7rem] font-['Founders_Grotesk_X_Condensed'] font-medium leading-[5.5rem]">
+                {item}
+              </h1>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="border-t-[1px] border-zinc-800 mt-16 flex justify-between items-center py-5 px-20">
+        {['For public and private companies', 'From the first pitch to IPO'].map((item, index) => (
+          <p key={index} className="text-base font-light tracking-wider leading-none font-Neue ">
+            {item}
+          </p>
+        ))}
+        <div className="start flex items-center gap-1">
+          <button className="px-5 py-2 border-[1px] border-zinc-400 rounded-full font-normal text-sm font-Neue uppercase">
+            START THE PROJECT
+          </button>
+          <div className="w-10 h-10 border-[1px] border-zinc-400 rounded-full flex items-center justify-center">
+            <GoArrowUpRight />
+          </div>
         </div>
       </div>
     </div>
