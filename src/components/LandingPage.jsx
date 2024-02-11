@@ -13,12 +13,17 @@ const LandingPage = () => {
                 <motion.div
                   initial={{ width: 0, marginLeft: -10 }}
                   animate={{ width: '9vw', marginLeft: 0 }}
-                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1, delay: 0.4 }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1.2, delay: 1 }}
                   className=" mr-[1vw] rounded-md bg-[#B7D253] h-[5.7vw] relative top-[0.8vw]"></motion.div>
               )}
-              <h1 className="pt-[2vw] -mb-[1vw] uppercase text-[9vw] font-['Founders_Grotesk_X_Condensed'] font-medium leading-[.70]">
+              <motion.h1
+                variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: 1, y: 0 } }}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.7, delay: 0.25 }}
+                className="pt-[2vw] -mb-[1vw] uppercase text-[9vw] font-['Founders_Grotesk_X_Condensed'] font-medium leading-[.70]">
                 {item}
-              </h1>
+              </motion.h1>
             </div>
           </div>
         ))}
