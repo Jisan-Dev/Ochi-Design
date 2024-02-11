@@ -10,7 +10,11 @@ const LandingPage = () => {
           <div key={index} className="masker">
             <div className="w-fit flex overflow-hidden">
               {index === 1 && (
-                <div className=" mr-[1vw] w-[9vw] rounded-md bg-[#B7D253] h-[5.7vw] relative top-[0.8vw]"></div>
+                <motion.div
+                  initial={{ width: 0, marginLeft: -10 }}
+                  animate={{ width: '9vw', marginLeft: 0 }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1, delay: 0.4 }}
+                  className=" mr-[1vw] rounded-md bg-[#B7D253] h-[5.7vw] relative top-[0.8vw]"></motion.div>
               )}
               <h1 className="pt-[2vw] -mb-[1vw] uppercase text-[9vw] font-['Founders_Grotesk_X_Condensed'] font-medium leading-[.70]">
                 {item}
