@@ -1,6 +1,7 @@
 import About from './components/About';
 import Eyes from './components/Eyes';
 import Featured from './components/Featured';
+import Footer from './components/Footer';
 import LandingPage from './components/LandingPage';
 import LogoCards from './components/LogoCards';
 import Marquee from './components/Marquee';
@@ -16,6 +17,7 @@ const App = () => {
       <Eyes />
       <Featured />
       <LogoCards />
+      <Footer />
     </div>
   );
 };
