@@ -24,7 +24,7 @@ const LandingPage = () => {
                 variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: 1, y: 0 } }}
                 initial="hidden"
                 animate="visible"
-                transition={{ duration: 0.7, delay: 0.25 }}
+                transition={{ duration: 0.7, delay: 0.6 }}
                 className="pt-[2vw] -mb-[1vw] uppercase text-[9vw] font-['Founders_Grotesk_X_Condensed'] font-medium leading-[.70]">
                 {item}
               </motion.h1>
