@@ -7,7 +7,7 @@ const Marquee = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed=".001"
-      className="w-full pt-20 pb-16 rounded-tl-3xl rounded-tr-3xl bg-[#004D43]">
+      className="w-full pt-20 pb-16 rounded-tl-3xl rounded-tr-3xl bg-[#004D43] relative ">
       <div className="border-t-[1px] border-b-[1px] border-zinc-300 flex  whitespace-nowrap overflow-hidden">
         <motion.h1
           initial={{ x: '0' }}
