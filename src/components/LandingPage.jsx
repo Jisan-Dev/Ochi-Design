@@ -4,7 +4,11 @@ import { GoArrowUpRight } from 'react-icons/go';
 
 const LandingPage = () => {
   return (
-    <div className="w-full h-screen bg-zinc-900 pt-1">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-0.5"
+      className="w-full h-screen bg-zinc-900 pt-1">
       <div className="textstructure mt-40 px-20">
         {['we create', 'eye-opening', 'presentations'].map((item, index) => (
           <div key={index} className="masker">
