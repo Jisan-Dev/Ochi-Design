@@ -17,8 +17,8 @@ const LandingPage = () => {
                 <motion.div
                   initial={{ width: 0, marginLeft: -10 }}
                   animate={{ width: '9vw', marginLeft: 0 }}
-                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1.2, delay: 1 }}
-                  className=" mr-[1vw] rounded-md bg-[#B7D253] h-[5.7vw] relative top-[0.8vw]"></motion.div>
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1.2, delay: 1.2 }}
+                  className=" mr-[1vw] rounded-md bg-[url('images/content-image01.jpg')] bg-cover h-[5.7vw] relative top-[0.8vw]"></motion.div>
               )}
               <motion.h1
                 variants={{ hidden: { opacity: 0, y: 75 }, visible: { opacity: 1, y: 0 } }}
