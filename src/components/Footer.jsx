@@ -2,7 +2,10 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="w-full flex h-screen bg-zinc-900 p-20">
+    <div
+      data-scroll
+      data-scroll-speed="0.33"
+      className="w-full flex h-screen bg-zinc-900 p-20 relative z-10 ">
       <div className='w-1/2 h-full flex flex-col justify-between font-["Bebas_Neue"]'>
         <div className="headings">
           <h1 className="text-[9vw] font-medium uppercase leading-[8vw]">EYE-</h1>

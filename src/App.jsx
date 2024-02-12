@@ -19,8 +19,11 @@ const App = () => {
       <About />
       <Eyes />
       <Featured />
-      <LogoCards />
-      <Footer />
+      {/* <LogoCards /> */}
+      <LogoCards>
+        <Footer />
+      </LogoCards>
+      {/* <Footer /> */}
     </div>
   );
 };
